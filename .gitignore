@@ -1,0 +1,13 @@
+# Ignore dependencies
+node_modules/
+frontend/node_modules/
+
+# Ignore the virtual environment (wherever it is)
+venv/
+backend/venv/
+
+# Ignore database and cache
+*.db
+*.sqlite3
+__pycache__/
+*.pyc
