@@ -54,6 +54,8 @@ bentoveda/
 │   │   ├── App.jsx
 │   │   └── main.jsx
 │   ├── package.json
+|   ├── tailwind.config.js
+    ├──|postcss.config.css
 │   └── vite.config.js
 │
 └── README.md
