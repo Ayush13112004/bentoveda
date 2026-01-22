@@ -54,8 +54,6 @@ bentoveda/
 │   │   ├── App.jsx
 │   │   └── main.jsx
 │   ├── package.json
-|   ├── tailwind.config.js
-    ├──|postcss.config.css
 │   └── vite.config.js
 │
 └── README.md
@@ -112,7 +110,42 @@ bentoveda/
    yarn install
    ```
 
-3. **Start the development server**:
+   **Required npm packages** (if installing manually):
+   ```bash
+   npm install react react-dom
+   npm install react-router-dom
+   npm install lucide-react
+   npm install -D tailwindcss postcss autoprefixer
+   npm install -D vite @vitejs/plugin-react
+   ```
+
+   Or add these to your `package.json`:
+   ```json
+   {
+     "dependencies": {
+       "react": "^18.2.0",
+       "react-dom": "^18.2.0",
+       "react-router-dom": "^6.20.0",
+       "lucide-react": "^0.263.1"
+     },
+     "devDependencies": {
+       "@vitejs/plugin-react": "^4.2.0",
+       "autoprefixer": "^10.4.16",
+       "postcss": "^8.4.32",
+       "tailwindcss": "^3.3.6",
+       "vite": "^5.0.7"
+     }
+   }
+   ```
+
+3. **Initialize Tailwind CSS** (if not already configured):
+   ```bash
+   npx tailwindcss init -p
+   ```
+
+   This creates `tailwind.config.js` and `postcss.config.js`
+
+4. **Start the development server**:
    ```bash
    npm run dev
    # or
@@ -221,7 +254,9 @@ The admin dashboard is protected with a simple password authentication:
 - SQLite may not scale for production use
 - CORS is currently wide open for localhost
 
+## 📧 Contact
 
+For questions or support, please contact the BentoVeda team.
 
 ---
 
